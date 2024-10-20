@@ -1,0 +1,27 @@
+.btn_one {
+  background: #00a22f;
+  color: white !important;
+  border-radius: 2px !important;
+}
+.btn_one:hover {
+  color: white !important;
+  background: #000 !important;
+}
+.btn_two {
+  background: #000 !important;
+  color: white !important;
+  border-radius: 2px !important;
+}
+.btn_two:hover {
+  color: white !important;
+  background: #00a22f !important;
+}
+.btn_three {
+  color: white !important;
+  border-radius: 2px !important;
+  background: #0d6efd !important;
+}
+.btn_three:hover {
+  color: white !important;
+  background: #00a22f !important;
+}

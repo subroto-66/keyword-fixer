@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Key Word</title>
+    <link rel="stylesheet" href="asset/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-10 col-md-8 my-2 py-2 px-4 mx-auto shadow rounded">
+        <h4 class="text-center mt-1">Primary Keyword</h4>
+        <div class="mb-2">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Primary Keyword</label
+          >
+          <textarea
+            class="form-control"
+            id="primary_keyword"
+            rows="8"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Add-On Keyword</label
+          >
+          <textarea
+            class="form-control"
+            id="add_on_keyword"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Where Do you Want to place addon keyword</label
+          >
+          <div style="padding-left: 5px" class="form-check">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="place"
+                id="front"
+                value="front"
+              />
+              <label class="form-check-label" for="front">Front</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="place"
+                id="back"
+                value="back"
+              />
+              <label class="form-check-label" for="back">Back</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Match Type</label
+          >
+          <div style="padding-left: 5px" class="form-check">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="match_type"
+                id="exact"
+                value="one"
+              />
+              <label class="form-check-label" for="exact">Exact</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="match_type"
+                id="phrase"
+                value="two"
+              />
+              <label class="form-check-label" for="phrase">Phrase</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="match_type"
+                id="broad"
+                value="three"
+              />
+              <label class="form-check-label" for="broad">Broad</label>
+            </div>
+          </div>
+        </div>
+        <button type="button" onclick="addon_keyword()" class="btn btn_one">
+          Generate Keyword
+        </button>
+        <button type="button" onclick="myFunction()" class="btn btn_two">
+          Copy Keyword
+        </button>
+        <button type="button" id="removeDuplicatesButton" class="btn btn_three">
+          Remove Duplicate Keyword
+        </button>
+        <textarea
+          id="text_to_copy"
+          style="position: absolute; left: -9999px"
+        ></textarea>
+
+        <p
+          class="p-2 mt-3 border shadow-sm rounded"
+          id="showValue"
+          style="white-space: pre-wrap"
+        >
+          Empty Keyword!
+        </p>
+      </div>
+      <!-- <div class="row">
+        <div >
+          
+        </div>
+      </div> -->
+    </div>
+
+    <script src="asset/bootstrap.min.js"></script>
+    <script src="asset/javascript.js"></script>
+  </body>
+</html>
